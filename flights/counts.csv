@@ -1,0 +1,4 @@
+# echo "dir;files"; for dir in *; do if [ -d $dir ]; then cd $dir; echo "$dir;"`ls -l | tail -n +2 | wc | sed -e 's/ *\([0-9][0-9]*\).*/\1/g'`; cd ..; fi; done
+dir;files
+NOK;69
+OK;1066
