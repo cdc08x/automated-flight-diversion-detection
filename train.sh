@@ -85,12 +85,9 @@ exit 0
 for i in {1..10}
 do
   ((j=j%PARALLEL_THREADS)); ((j++==0)) && wait
-  (sleep `expr $i` && echo "Suca $i") &
+  (sleep `expr $i` && echo "DONE $i") &
 done
 
 wait
-echo "Vattelappiander"
-
-exit 0
 
 exit 0
